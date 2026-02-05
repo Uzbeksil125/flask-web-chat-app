@@ -1,0 +1,63 @@
+{
+  "umar": {
+    "blocked": [],
+    "requests": [],
+    "chats": [
+      "private_owner__umar",
+      "private_12345678__umar"
+    ],
+    "full_name": "Umar Shomurodov",
+    "password": "scrypt:32768:8:1$46Q4hxj4dV9HnyM5$d006b30f0801419ae1690d9355b39ae794f419b8c38f0d88d19bd99b5fa356fbef5025858d8c1676b5ae4aa5eee14453423260ec2cb84733b63a335ae30df5c0"
+  },
+  "umar1": {
+    "blocked": [],
+    "requests": [],
+    "chats": [],
+    "full_name": "Umar Shomurodov",
+    "password": "scrypt:32768:8:1$appkzV5mOj9l14K4$9e212b0d7f333ab5b61fec55c3deb2031d5055a5cc6bcc768ce9a366df744c7ea147561ab1abda8d9de216b740c740e507e8d72daa451ffaac38716c03119d05"
+  },
+  "negros": {
+    "blocked": [],
+    "requests": [],
+    "chats": [],
+    "full_name": "Negros Melavada",
+    "password": "scrypt:32768:8:1$Mw648jm2nLARCZxq$8e7a76f85ad6a5af085adbcd21a377c5768bf6f6fba6b7aa547d0ef020cecf3f855a706ca25c3353f011abe37709cfe28ff6a9bd05bf0234c39088df38d0e38b"
+  },
+  "owner": {
+    "blocked": [],
+    "requests": [],
+    "chats": [
+      "private_owner__umar",
+      "private_owner__paython_2014"
+    ],
+    "full_name": "Nexora Flex",
+    "password": "scrypt:32768:8:1$NDvI5hpMbwPGD99z$7b3cb18d9722dabb62193acbda591ab3001016e6b67c1f59d531508927b87bcc468eb424a3425ce28532f15137dc69df35cbf5bdcb3fa5b3b4ef182c8e73f5b7"
+  },
+  "diyorbek": {
+    "full_name": "salom",
+    "password": "scrypt:32768:8:1$tcDkGBrhUCKYlDUi$ce0415b3a9cc85a1355b707bb6a90d461add4213698ac8ce5665c985b14d3ebbf50ebfcbfbda0ca9083c5cbbadc724002ac182d6409b4bef8e7cf75d6ceee6c3",
+    "blocked": [],
+    "requests": [
+      "umar"
+    ],
+    "chats": []
+  },
+  "12345678": {
+    "full_name": "Ulugbek Sayfiddinov",
+    "password": "scrypt:32768:8:1$4jBcuJBmV3YAHCEc$2ad2273ed7a68768ca5f6e59d3b794e5e45f4f2c455eaa303be3221053634eb40587620ede870e84eaae497591eb6415cedfda2d1040dd71c8787a22b9ed2188",
+    "blocked": [],
+    "requests": [],
+    "chats": [
+      "private_12345678__umar"
+    ]
+  },
+  "paython_2014": {
+    "full_name": "Asilbek Nurmatov",
+    "password": "scrypt:32768:8:1$OYOR2AdGQLzIF82i$6ed95e68af42b1d41acf4724d29808d8dfd96f73d422707e9571c53eef7117a35a2db889626502f8fe258a3f4112b3d7c40df7f7f686494a3b11952174bbec2a",
+    "blocked": [],
+    "requests": [],
+    "chats": [
+      "private_owner__paython_2014"
+    ]
+  }
+}

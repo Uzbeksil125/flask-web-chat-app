@@ -1,0 +1,385 @@
+[
+  {
+    "id": "270fcf194a124bfca6e51876a600c887",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "bu\\",
+    "reply_to": null,
+    "time": "15:34",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "4c7e466ace7548439dc6c943d0cdbb49",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "?",
+    "reply_to": null,
+    "time": "15:34",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "3fe8ffe4b30044e4bb4d021d9fc105a2",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "pp",
+    "reply_to": null,
+    "time": "15:34",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "f7e6766bccef45c88d6c60840d154505",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "ok",
+    "reply_to": null,
+    "time": "15:34",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "e564971740124ee699d2d818a0ae642d",
+    "type": "image",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "file": "9ce57396d80042ac9ecf5d3f7c4f70b8.txt",
+    "time": "15:34",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "03eb4e7095514743848ef1907e0e33f9",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "zo'r",
+    "reply_to": null,
+    "time": "15:34",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "75ab6f4372444f2a9f0a35b76bdbd2b0",
+    "type": "image",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "file": "3e1f85004bba40e3a0fac0bfef3e31b3.txt",
+    "time": "15:35",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "ba5e5c252aea40f3aaa1d49d8453f695",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "(\u2741\u00b4\u25e1`\u2741)(\u2741\u00b4\u25e1`\u2741)(\u2741\u00b4\u25e1`\u2741)(\u2741\u00b4\u25e1`\u2741)",
+    "reply_to": null,
+    "time": "15:35",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "11f5641dc1b34531b64cd51707a8c515",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "ee",
+    "reply_to": null,
+    "time": "15:35",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "caaccbcb55d14f33913f84247153c9ad",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "ana shu PM dao'qiydi",
+    "reply_to": null,
+    "time": "15:35",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "cddcfa44659e494ebb8ce1a247c0a2ea",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "bilaman",
+    "reply_to": null,
+    "time": "15:35",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "e6d842723f4a48e696d005273f4390a7",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "taniyman",
+    "reply_to": null,
+    "time": "15:35",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "7c27260070e34ed787d6a4f75adc52c0",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "ismi kim unda?",
+    "reply_to": null,
+    "time": "15:35",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "f1d6bd4d58844c45a9db34e961d38e33",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "idk",
+    "reply_to": null,
+    "time": "15:36",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "5c4204cd7ea14cc39fc358f5d44f65bc",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "Abduqodirov Sanjar",
+    "reply_to": null,
+    "time": "15:36",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "7ac6c3a92b504bdcb14947f9498f9d28",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "Detskiy",
+    "reply_to": null,
+    "time": "15:36",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "58614d79f7814523918a07fad1f52751",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "ok",
+    "reply_to": null,
+    "time": "15:36",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "a411cc9da45c422e9bd5e006fc9a9dee",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "abdurahmonchi",
+    "reply_to": null,
+    "time": "15:36",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "cec11f8383f14c6f82ee03e1d4f2376e",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "skibidi toilet koradi uchun shu photoshopni qilgandim",
+    "reply_to": null,
+    "time": "15:36",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "5d11b019e81b4d97b9aecc3c07e12ecd",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "undanam battar",
+    "reply_to": "abdurahmonchi",
+    "time": "15:36",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "81234f1d105f4f5187b9b054edf929f9",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "haa",
+    "reply_to": null,
+    "time": "15:36",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "e73336c5ec68490da9e699129b4298b2",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "brainrot Pro Max ULtra SE u",
+    "reply_to": null,
+    "time": "15:36",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "49e03daf3c7c4bbcb9e5c37c197bba69",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "ok",
+    "reply_to": null,
+    "time": "15:37",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "56a803a76a6b45f6b31e94d31f0aa881",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "salommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+    "reply_to": null,
+    "time": "15:37",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "dfcb48f5303542d89bfbcced1a0e0392",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "msg": "o hay salom e",
+    "reply_to": null,
+    "time": "15:42",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "ddd55088a4e6419c888c472c6fadf312",
+    "type": "image",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "file": "8c259e4367a04aa5828ce78faeb57859.txt",
+    "time": "15:44",
+    "seen_by": [
+      "12345678",
+      "umar"
+    ]
+  },
+  {
+    "id": "bdabd69f0830499b886f568956500244",
+    "type": "image",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "file": "183bc3e4f198406cb6bcfcafdbd3b067.txt",
+    "time": "15:45",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "7ad59d40c6434d53be7fba6da43f75dd",
+    "type": "image",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "file": "a8936ca763cf496cab7e4928b6bf9a73.txt",
+    "time": "15:45",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "275408aaa9a74ccf80b7f95c066bc527",
+    "type": "image",
+    "room": "private_12345678__umar",
+    "username": "umar",
+    "file": "f3c4e69e29b447e7a35703d0eb397dc0.txt",
+    "time": "15:46",
+    "seen_by": [
+      "umar",
+      "12345678"
+    ]
+  },
+  {
+    "id": "df47be2593da48beb464fc93ac628971",
+    "type": "text",
+    "room": "private_12345678__umar",
+    "username": "12345678",
+    "msg": "gtfooh",
+    "reply_to": null,
+    "time": "15:47",
+    "seen_by": [
+      "12345678"
+    ]
+  }
+]

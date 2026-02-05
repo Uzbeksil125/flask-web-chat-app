@@ -1,0 +1,462 @@
+[
+  {
+    "id": "880cabd20e544558abba16922b6a1cfd",
+    "type": "text",
+    "room": "global",
+    "username": "12345678",
+    "msg": "hi",
+    "reply_to": null,
+    "time": "15:28",
+    "seen_by": [
+      "12345678",
+      "umar",
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "4cd81a8f18704944bb93fd2db2672749",
+    "type": "text",
+    "room": "global",
+    "username": "umar",
+    "msg": "hi",
+    "reply_to": null,
+    "time": "15:32",
+    "seen_by": [
+      "umar",
+      "12345678",
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "e0c1bc1246b143d1a45d720d026e7321",
+    "type": "text",
+    "room": "global",
+    "username": "umar",
+    "msg": "lichkaga yozishamizmi?",
+    "reply_to": null,
+    "time": "15:32",
+    "seen_by": [
+      "umar",
+      "12345678",
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "a753918f14a44080bb35cf1761b5af84",
+    "type": "text",
+    "room": "global",
+    "username": "umar",
+    "msg": "notificationslaringni kor qani",
+    "reply_to": null,
+    "time": "15:32",
+    "seen_by": [
+      "umar",
+      "12345678",
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "6182bf979edb4ce19ff924a804ed2f93",
+    "type": "text",
+    "room": "global",
+    "username": "umar",
+    "msg": "kimsan ozi",
+    "reply_to": null,
+    "time": "15:32",
+    "seen_by": [
+      "umar",
+      "12345678",
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "c223b23ef0714d2e9d87bdf61a0a3c3e",
+    "type": "text",
+    "room": "global",
+    "username": "umar",
+    "msg": "?",
+    "reply_to": null,
+    "time": "15:32",
+    "seen_by": [
+      "umar",
+      "12345678",
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "b786fb4d44f5459fa533d62e4ea6ac08",
+    "type": "text",
+    "room": "global",
+    "username": "umar",
+    "msg": "san manga yubor hay",
+    "reply_to": null,
+    "time": "15:33",
+    "seen_by": [
+      "umar",
+      "12345678",
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "fd26520fb0244c33875029552aa4c944",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "Avatarlar og'irlangan",
+    "reply_to": null,
+    "time": "15:53",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "2e38e7e5d7f347f8a9fba45031371b1a",
+    "type": "file",
+    "room": "global",
+    "username": "owner",
+    "file": "02c73ca26ae64e919cd590a25f389e0b.avif",
+    "name": "assorti_1.avif",
+    "mime": "image/avif",
+    "time": "16:09",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "010f9ab41672499088e0133235c740c3",
+    "type": "file",
+    "room": "global",
+    "username": "owner",
+    "file": "0a009bedd0934770a2f5d5f7196e86f1.webp",
+    "name": "assorti_4.webp",
+    "mime": "image/webp",
+    "time": "16:09",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "c0674f88650248919796937b4c25cf58",
+    "type": "file",
+    "room": "global",
+    "username": "owner",
+    "file": "bd216ddb951c44c79eecda4db79c7e55.jpg",
+    "name": "assorti_2.jpg",
+    "mime": "image/jpeg",
+    "time": "16:09",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "429f44ad6a4849f1ad639b4f783c2ec7",
+    "type": "text",
+    "room": "global",
+    "username": "paython_2014",
+    "msg": "qonday",
+    "reply_to": null,
+    "time": "16:40",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "4d386793429d4dd085d2faacf3aa09ee",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "yaxshi",
+    "reply_to": null,
+    "time": "16:41",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "0e79194215124a66adf269812b722a9c",
+    "type": "text",
+    "room": "global",
+    "username": "paython_2014",
+    "msg": "yaxshimi",
+    "reply_to": null,
+    "time": "16:41",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "b29e3c83a41f45b49bf6284202962287",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "bitta narsani test qilomman",
+    "reply_to": null,
+    "time": "16:41",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "ff901785c68b4712b15f5b8255c76758",
+    "type": "text",
+    "room": "global",
+    "username": "paython_2014",
+    "msg": "nimani",
+    "reply_to": null,
+    "time": "16:41",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "80023bb51c9940d09c9b27035edcaaec",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "rasmlar korinayotgandi enid korinmayopti",
+    "reply_to": null,
+    "time": "16:41",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "122bf45744274baa97c09c4b54e65c73",
+    "type": "text",
+    "room": "global",
+    "username": "paython_2014",
+    "msg": "haaaaaaaaaaaaaaaaaa",
+    "reply_to": null,
+    "time": "16:41",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "c7f511a212624702aa4fe4d8e06ada16",
+    "type": "text",
+    "room": "global",
+    "username": "paython_2014",
+    "msg": "umar aka",
+    "reply_to": null,
+    "time": "16:41",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "3363aa561f334c06b1dcee586e64a9b0",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "ha",
+    "reply_to": null,
+    "time": "16:42",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "7359bf26dad7444b8f005290584b8984",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "o'zim tuzdim shuni",
+    "reply_to": null,
+    "time": "16:42",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "2d78e34eaf1c42c2b117732da06e251d",
+    "type": "text",
+    "room": "global",
+    "username": "paython_2014",
+    "msg": "man asilbekman",
+    "reply_to": null,
+    "time": "16:42",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "918fd6b0603445479db759e5e3ba61ec",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "bilaman",
+    "reply_to": null,
+    "time": "16:42",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "c660fb02d22c47d8a50289905ec3cf12",
+    "type": "text",
+    "room": "global",
+    "username": "paython_2014",
+    "msg": "rostanmi ishonaman sizga",
+    "reply_to": null,
+    "time": "16:42",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "0d9ef38565ae4646ad03c54967ac3c76",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "ha",
+    "reply_to": null,
+    "time": "16:42",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "fb78e5a25981496d99fbbae09f49abbd",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "buni ustida 2 haftadan beri ishlayman",
+    "reply_to": null,
+    "time": "16:43",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "8d5e220a54904464b37dc4e3ffc7ad1d",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "shundey bosh og'riq",
+    "reply_to": null,
+    "time": "16:43",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "6b6cccfb6b86429f9dfe7c617b8618d8",
+    "type": "text",
+    "room": "global",
+    "username": "paython_2014",
+    "msg": "bo'ling zo'r qilasiz ishonaman",
+    "reply_to": null,
+    "time": "16:43",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "8e55dbe14b0d45b684067c442cec9c90",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "sanga dr yubordim",
+    "reply_to": null,
+    "time": "16:43",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "2208b22317234774866d4d0606601c3c",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "qong'iroqni bos",
+    "reply_to": null,
+    "time": "16:43",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "a3332ab270424189b73f03d23941cfdd",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "acceptni bos",
+    "reply_to": null,
+    "time": "16:43",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "691502c4e2c04b978fbdb298588bfb3c",
+    "type": "file",
+    "room": "global",
+    "username": "owner",
+    "file": "564e7f17464c478bb33bfca40d3c18c9.png",
+    "name": "1006 - masala.png",
+    "mime": "image/png",
+    "time": "16:54",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "b331b2bdbf8c43f1893916a78812d907",
+    "type": "file",
+    "room": "global",
+    "username": "owner",
+    "file": "b1fb167169cb46908ed92f44f1f18dd0.png",
+    "name": "Screenshot 2026-02-04 080640.png",
+    "mime": "image/png",
+    "time": "16:58",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "cabe57d523d646d39a969b95ea97c48c",
+    "type": "text",
+    "room": "global",
+    "username": "owner",
+    "msg": "ha",
+    "reply_to": "lichkaga yozishamizmi?",
+    "time": "17:54",
+    "seen_by": [
+      "owner"
+    ]
+  }
+]

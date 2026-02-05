@@ -1,0 +1,79 @@
+[
+  {
+    "id": "dc2f3fc9ca0d47df998ce9b4c5b0d792",
+    "type": "text",
+    "room": "private_owner__paython_2014",
+    "username": "owner",
+    "msg": "qalay",
+    "reply_to": null,
+    "time": "16:44",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "1743b8f2559b42a694d62983a91957f9",
+    "type": "text",
+    "room": "private_owner__paython_2014",
+    "username": "paython_2014",
+    "msg": "zo'rku",
+    "reply_to": null,
+    "time": "16:44",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "1a02096c794e4520a3b8968792ff7751",
+    "type": "text",
+    "room": "private_owner__paython_2014",
+    "username": "owner",
+    "msg": "bropti",
+    "reply_to": null,
+    "time": "16:44",
+    "seen_by": [
+      "owner",
+      "paython_2014"
+    ]
+  },
+  {
+    "id": "62a98e1b9f75449e9aeeb58afa7cac5e",
+    "type": "text",
+    "room": "private_owner__paython_2014",
+    "username": "paython_2014",
+    "msg": "yaxshi qilyapsiz",
+    "reply_to": null,
+    "time": "16:44",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "b882f8a4f5e84d2cb65a942edbf9f169",
+    "type": "text",
+    "room": "private_owner__paython_2014",
+    "username": "paython_2014",
+    "msg": "mana kirdim",
+    "reply_to": null,
+    "time": "16:48",
+    "seen_by": [
+      "paython_2014",
+      "owner"
+    ]
+  },
+  {
+    "id": "0547d39dca044348a0550399104940a2",
+    "type": "text",
+    "room": "private_owner__paython_2014",
+    "username": "owner",
+    "msg": "zo'r",
+    "reply_to": null,
+    "time": "17:52",
+    "seen_by": [
+      "owner"
+    ]
+  }
+]

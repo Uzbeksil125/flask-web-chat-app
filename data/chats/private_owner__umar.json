@@ -1,0 +1,141 @@
+[
+  {
+    "id": "dc42b6375b5043b5af62561599835da9",
+    "type": "text",
+    "room": "private_owner__umar",
+    "username": "umar",
+    "msg": "Parol: *****",
+    "reply_to": null,
+    "time": "15:42",
+    "seen_by": [
+      "umar",
+      "owner"
+    ]
+  },
+  {
+    "id": "c5811a55927446ef900963398c3f2558",
+    "type": "text",
+    "room": "private_owner__umar",
+    "username": "owner",
+    "msg": "maniki esa : *********",
+    "reply_to": null,
+    "time": "15:42",
+    "seen_by": [
+      "owner",
+      "umar"
+    ]
+  },
+  {
+    "id": "a7ceccbad2ee428db69409e4e9f9d8ee",
+    "type": "text",
+    "room": "private_owner__umar",
+    "username": "umar",
+    "msg": "bilaman, bitta odam bizaku",
+    "reply_to": null,
+    "time": "15:42",
+    "seen_by": [
+      "umar",
+      "owner"
+    ]
+  },
+  {
+    "id": "9028d130283147f0a84974c6d2978359",
+    "type": "text",
+    "room": "private_owner__umar",
+    "username": "owner",
+    "msg": "ha ros esimdan chiqibdi",
+    "reply_to": null,
+    "time": "15:43",
+    "seen_by": [
+      "owner",
+      "umar"
+    ]
+  },
+  {
+    "id": "b475279a5c904d1d88dcaf0723ecdca4",
+    "type": "text",
+    "room": "private_owner__umar",
+    "username": "owner",
+    "msg": "man sila",
+    "reply_to": null,
+    "time": "15:43",
+    "seen_by": [
+      "owner",
+      "umar"
+    ]
+  },
+  {
+    "id": "543f3dbc0e20422fa8a11057a1be6943",
+    "type": "text",
+    "room": "private_owner__umar",
+    "username": "umar",
+    "msg": "bilaman",
+    "reply_to": null,
+    "time": "15:43",
+    "seen_by": [
+      "umar",
+      "owner"
+    ]
+  },
+  {
+    "id": "0bfeab8bf2ac442b90a2a54238538c44",
+    "type": "image",
+    "room": "private_owner__umar",
+    "username": "owner",
+    "file": "60c4748e015c4064a7bb8e841b95949d.txt",
+    "time": "15:53",
+    "seen_by": [
+      "owner"
+    ]
+  },
+  {
+    "id": "f58314bbd7ae4300a6443c53d2e4748b",
+    "type": "text",
+    "room": "private_owner__umar",
+    "username": "owner",
+    "msg": "e",
+    "reply_to": "bilaman, bitta odam bizaku",
+    "time": "15:53",
+    "seen_by": [
+      "owner"
+    ]
+  },
+  {
+    "id": "030fc3f51676488b8fa873d018c717c0",
+    "type": "text",
+    "room": "private_owner__umar",
+    "username": "owner",
+    "msg": "e e",
+    "reply_to": null,
+    "time": "15:53",
+    "seen_by": [
+      "owner"
+    ]
+  },
+  {
+    "id": "8ac9a0c854224264a3fc7e99ceed14a2",
+    "type": "file",
+    "room": "private_owner__umar",
+    "username": "owner",
+    "file": "7de9750fb74f4708bd9830f2f586b907.avif",
+    "name": "assorti_1.avif",
+    "mime": "image/avif",
+    "time": "16:08",
+    "seen_by": [
+      "owner"
+    ]
+  },
+  {
+    "id": "ef4e566fdd8a4bb2b4cf183be93ba03b",
+    "type": "file",
+    "room": "private_owner__umar",
+    "username": "owner",
+    "file": "21f3fe5da4344fb89a51aab36b7cd226.jpg",
+    "name": "assorti_8.jpg",
+    "mime": "image/jpeg",
+    "time": "16:09",
+    "seen_by": [
+      "owner"
+    ]
+  }
+]
