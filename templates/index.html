@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Umargramm - Login</title>
+<link rel="stylesheet" href="/static/styles.css">
+<style>
+.error{color:#ff6b6b;text-align:center;margin-bottom:10px;}
+</style>
+</head>
+<body>
+
+<div class="auth-box">
+    {% if error %}
+        <div class="error">
+            {% if error == 'invalid' %}Invalid username or password
+            {% elif error == 'user_exists' %}Username already exists
+            {% elif error == 'missing_fields' %}All fields required
+            {% elif error == 'login_required' %}Please login first
+            {% endif %}
+        </div>
+    {% endif %}
+
+    <form method="post" action="/login" id="login">
+        <h2>Login</h2>
+        <input name="username" placeholder="Username">
+        <input name="password" type="password" placeholder="Password">
+        <button>Login</button>
+    </form>
+
+    <form method="post" action="/register" id="register" style="display:none">
+        <h2>Register</h2>
+        <input name="full_name" placeholder="Full name">
+        <input name="username" placeholder="Username">
+        <input name="password" placeholder="Password" type="password">
+        <button>Register</button>
+    </form>
+
+    <div class="toggle" onclick="toggle()">No account? Register</div>
+</div>
+
+<script>
+let reg=false;
+function toggle(){
+    reg=!reg;
+    login.style.display = reg?'none':'block';
+    register.style.display = reg?'block':'none';
+    document.querySelector('.toggle').innerText =
+      reg?'Have account? Login':'No account? Register';
+}
+</script>
+
+</body>
+</html>

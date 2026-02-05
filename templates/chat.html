@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Umargramm</title>
+<link rel="stylesheet" href="/static/styles.css">
+
+<style>
+/* ===== MESSAGE ===== */
+.message {
+    display: flex;
+    gap: 8px;
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.message.left { background:#1e293b; }
+.message.right { background:#6366f1; margin-left:auto; }
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.msg-body { flex:1; }
+
+.msg-header {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.msg-reply {
+    font-size: 12px;
+    background:#020617;
+    padding:6px;
+    border-left:3px solid #38bdf8;
+    margin:6px 0;
+}
+
+.msg-text {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.msg-meta {
+    display:flex;
+    justify-content:space-between;
+    font-size:11px;
+    opacity:.7;
+    margin-top:4px;
+}
+
+/* ===== REPLY PREVIEW ===== */
+#replyPreview {
+    display:none;
+    padding:8px;
+    background:#020617;
+    border-left:3px solid #38bdf8;
+    margin:8px;
+    font-size:13px;
+}
+#replyPreview span { cursor:pointer; }
+
+/* ===== PANELS ===== */
+.panel {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100%;
+    background: #020617;
+    border-left: 1px solid #1e293b;
+    transition: .25s;
+    padding: 14px;
+    z-index: 100;
+}
+.panel.show { right:0; }
+
+#sidebar button{
+    background:none;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+    padding:8px;
+    color:#e5e7eb;
+}
+#sidebar button:hover{
+    background:#1e293b;
+    border-radius:6px;
+}
+
+.badge{
+    background:#22c55e;
+    color:black;
+    border-radius:999px;
+    padding:2px 6px;
+    font-size:11px;
+    margin-left:4px;
+    display:none;
+}
+
+#uploadInput{ display:none; }
+</style>
+</head>
+
+<body>
+
+<div id="sidebar">
+    <h2>Umargramm</h2>
+
+    <button onclick="togglePanel('notifPanel')">
+        🔔 <span id="notifBadge" class="badge"></span>
+    </button>
+
+    <button onclick="togglePanel('newChatPanel')">➕</button>
+
+    <div id="chatList"></div>
+</div>
+
+<div id="chat">
+    <div id="chat-header">🌍 Global Chat</div>
+    <ul id="messages"></ul>
+
+    <div id="replyPreview">
+        Replying to: <span id="replyText"></span>
+        <span onclick="clearReply()"> ✕</span>
+    </div>
+
+    <form id="form">
+        <button type="button" onclick="uploadInput.click()">📎</button>
+        <input id="input" autocomplete="off" placeholder="Message…">
+        <button>Send</button>
+    </form>
+    <div id="uploadStatus" style="display:none;margin:8px;">
+        <div id="spinner">⏳ Uploading…</div>
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+        <div id="uploadError" style="color:#ef4444;font-size:13px;"></div>
+    </div>
+
+</div>
+
+<input type="file" id="uploadInput">
+
+<div class="panel" id="notifPanel">
+    <h3>Notifications</h3>
+    <ul id="notifList"></ul>
+</div>
+
+<div class="panel" id="newChatPanel">
+    <h3>Start private chat</h3>
+    <input id="newChatUser" placeholder="Username">
+    <button onclick="sendChatRequest()">Send</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+<script>
+const MAX_FILE_MB = 5
+
+const socket = io()
+const username = "{{ username }}"
+let currentRoom = 'global'
+let replyTo = null
+let messagesState = []
+
+/* ✅ ADD: define chatHeader (FIXES JS CRASH) */
+const chatHeader = document.getElementById('chat-header')
+
+/* ===== UTIL ===== */
+const avatar = u => `https://api.dicebear.com/7.x/identicon/svg?seed=${u}`
+
+function togglePanel(id){
+    document.querySelectorAll('.panel').forEach(p=>{
+        if(p.id!==id) p.classList.remove('show')
+    })
+    document.getElementById(id).classList.toggle('show')
+}
+
+function clearReply(){
+    replyTo=null
+    replyPreview.style.display='none'
+}
+
+/* ===== CONNECT ===== */
+socket.on('connect',()=>{
+    socket.emit('join',{room:'global'})
+    socket.emit('get_notifications')
+    socket.emit('get_chats')
+})
+
+/* ===== CHAT LIST ===== */
+socket.on('chat_list', rooms=>{
+    chatList.innerHTML=''
+    addChatItem('global','🌍 Global')
+
+    rooms.forEach(r=>{
+        const other=r.replace('private_','').replace(username,'').replace('__','').replace('_','')
+        addChatItem(r,'🔒 '+other)
+    })
+})
+
+socket.on('chat_added', data=>{
+    socket.emit('get_chats')
+    openRoom(data.room)
+})
+
+function addChatItem(room,label){
+    const d=document.createElement('div')
+    d.className='chat-item'
+    d.textContent=label
+    d.onclick=()=>openRoom(room)
+    chatList.appendChild(d)
+}
+
+function openRoom(room){
+    currentRoom=room
+    messagesState=[]
+    messages.innerHTML=''
+    chatHeader.textContent = room==='global'?'🌍 Global Chat':'🔒 Private Chat'
+    socket.emit('join',{room})
+}
+
+/* ===== NOTIFICATIONS ===== */
+socket.on('notification', n=>{
+    const li=document.createElement('li')
+    li.innerHTML=`
+        <b>${n.from}</b> wants to chat<br>
+        <button onclick="acceptChat('${n.from}',this)">Accept</button>
+        <button onclick="ignoreChat('${n.from}',this)">Ignore</button>
+    `
+    notifList.appendChild(li)
+})
+
+function acceptChat(from,el){
+    socket.emit('accept_chat',{from})
+    el.parentElement.remove()
+}
+
+function ignoreChat(from,el){
+    socket.emit('ignore_chat',{from})
+    el.parentElement.remove()
+}
+
+function sendChatRequest(){
+    if(newChatUser.value.trim()){
+        socket.emit('chat_request',{to:newChatUser.value.trim()})
+        newChatUser.value=''
+    }
+}
+
+/* ===== MESSAGES ===== */
+socket.on('message', m=>{
+    if(m.room !== currentRoom) return   // ✅ ADD: room filter
+    messagesState.push(m)
+    renderMessages()
+    if(m.username!==username)
+        socket.emit('read',{room:currentRoom})
+})
+
+socket.on('read', d=>{
+    messagesState.forEach(m=>{
+        if(!m.seen_by.includes(d.user))
+            m.seen_by.push(d.user)
+    })
+    renderMessages()
+})
+
+function renderMessages(){
+    messages.innerHTML=''
+    messagesState.forEach(m=>{
+        const li=document.createElement('li')
+        li.className=`message ${m.username===username?'right':'left'}`
+        li.innerHTML=`
+            <img class="avatar" src="${avatar(m.username)}">
+            <div class="msg-body">
+                <div class="msg-header">${m.username}</div>
+                ${m.reply_to?`<div class="msg-reply">↪ ${m.reply_to}</div>`:''}
+                ${
+                    m.type === 'file'
+                    ? (
+                        m.mime.startsWith('image/')
+                        ? `<img src="${m.data}" style="max-width:220px;border-radius:10px">`
+                        : `
+                            <a href="${m.data}" download="${m.name}" class="file-link">
+                                📎 ${m.name}
+                            </a>
+                        `
+                    )
+                    : `<div class="msg-text">${m.msg}</div>`
+                }
+
+                <div class="msg-meta">
+                    <span>${m.time}</span>
+                    <span>${m.username===username?(m.seen_by.length>1?'✓✓':'✓'):''}</span>
+                </div>
+            </div>
+        `
+        li.onclick=()=>{
+            replyTo=m.msg
+            replyText.textContent=m.msg
+            replyPreview.style.display='block'
+        }
+        messages.appendChild(li)
+    })
+    messages.scrollTop=messages.scrollHeight
+}
+
+/* ===== SEND TEXT ===== */
+form.onsubmit=e=>{
+    e.preventDefault()
+    if(!input.value.trim()) return
+    socket.emit('message',{
+        room:currentRoom,
+        msg:input.value,
+        reply_to:replyTo
+    })
+    input.value=''
+    clearReply()
+}
+
+uploadInput.onchange = () => {
+    const file = uploadInput.files[0]
+    if (!file) return
+
+    // ❌ size check
+    if (file.size > MAX_FILE_MB * 1024 * 1024) {
+        showUploadError(`File too large (max ${MAX_FILE_MB}MB)`)
+        uploadInput.value = ''
+        return
+    }
+
+    uploadStatus.style.display = 'block'
+    uploadError.textContent = ''
+    progressBar.style.width = '0%'
+
+    const reader = new FileReader()
+
+    reader.onprogress = e => {
+        if (e.lengthComputable) {
+            const percent = Math.round((e.loaded / e.total) * 100)
+            progressBar.style.width = percent + '%'
+        }
+    }
+
+    reader.onerror = () => {
+        showUploadError('Failed to read file')
+    }
+
+    reader.onload = () => {
+        socket.emit('file', {
+            room: currentRoom,
+            name: file.name,
+            mime: file.type || 'application/octet-stream',
+            data: reader.result
+        })
+    }
+
+    reader.readAsDataURL(file)
+    uploadInput.value = ''
+}
+socket.on('upload_ok', () => {
+    progressBar.style.width = '100%'
+    setTimeout(() => {
+        uploadStatus.style.display = 'none'
+        progressBar.style.width = '0%'
+    }, 400)
+})
+function showUploadError(msg){
+    uploadStatus.style.display = 'block'
+    uploadError.textContent = msg
+    progressBar.style.width = '0%'
+}
+
+
+</script>
+
+</body>
+</html>
